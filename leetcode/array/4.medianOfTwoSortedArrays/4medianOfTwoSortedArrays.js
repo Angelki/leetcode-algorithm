@@ -21,7 +21,7 @@ const findNthEle = (nums1, nums2, n) => {
 };
 
 // 分奇偶讨论
-var SOLUTION1_findMedianSortedArrays = (nums1, nums2) => {
+var findMedianSortedArrays$1 = (nums1, nums2) => {
     let len1 = nums1.length,
         len2 = nums2.length;
     if ((len1 + len2) % 2 === 1) {
@@ -35,7 +35,7 @@ var SOLUTION1_findMedianSortedArrays = (nums1, nums2) => {
 };
 
 // 不分类讨论
-var SOLUTION2_findMedianSortedArrays = (nums1, nums2) =>
+var findMedianSortedArrays$2 = (nums1, nums2) =>
     (findNthEle(nums1, nums2, (nums1.length + nums2.length + 1) >> 1) +
         findNthEle(nums1, nums2, (nums1.length + nums2.length + 2) >> 1)) /
     2;
@@ -57,7 +57,7 @@ var CHEAT_findMedianSortedArrays = (nums1, nums2) => {
   ✔ Your memory usage beats 89.04 % of javascript submissions (38.9 MB)
  */
 
-var findMedianSortedArrays = function(nums1, nums2) {
+var findMedianSortedArrays = function (nums1, nums2) {
     if (nums1.length > nums2.length) {
         [nums1, nums2] = [nums2, nums1];
     }

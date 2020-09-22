@@ -3,7 +3,7 @@
  * @return {string}
  */
 
-var longestPalindrome = function(s) {
+var longestPalindrome = function (s) {
     let max = '';
     for (let index = 0; index < s.length; index++) {
         for (let num = 0; num < 2; num++) {
